@@ -1,0 +1,218 @@
+<!-- Include Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- Testimonials Section -->
+<div class="swiper-container">
+  <!-- <h2>What Our Customers Say &nbsp;<span class="fs-40"> → </span></h2> -->
+  <h2 class="fs-25">
+    See how <span class="text-yellow">Oxmaint</span> is making a difference in
+    various industries
+  </h2>
+  <div class="swiper-wrapper">
+    <!-- Testimonial Slide 1 -->
+    <div class="swiper-slide">
+      <blockquote class="icon icon-top fs-lg text-center">
+        <p class="mt-6">
+          “If you are looking for an inclusive app for construction equipment
+          software, one that covers all of the bases. This is it. From
+          inspections, work-orders, parts management, maintenance schedules,
+          fuel tracking, incident reports and vehicle inventory; this is an all
+          in one package. Easy to learn, use and customize. We are very pleased
+          with the product.”
+        </p>
+        <div class="blockquote-details">
+          <div class="info ps-0">
+            <h5 class="mb-1">Gary Mitchell</h5>
+            <p class="mb-0">Manager</p>
+          </div>
+        </div>
+      </blockquote>
+    </div>
+
+    <!-- Testimonial Slide 2 -->
+    <div class="swiper-slide">
+      <blockquote class="icon icon-top fs-lg text-center">
+        <p class="mt-6">
+          “Great App. Saves a ton of paperwork and time. it's an awesome app. I
+          recommend it to any company large or small that have construction
+          equipment or machinery.”
+        </p>
+        <div class="blockquote-details">
+          <div class="info ps-0">
+            <h5 class="mb-1">Jackie Sanders</h5>
+            <p class="mb-0">Fleet Admin</p>
+          </div>
+        </div>
+      </blockquote>
+    </div>
+
+    <!-- Testimonial Slide 1 -->
+    <div class="swiper-slide">
+      <blockquote class="icon icon-top fs-lg text-center">
+        <p class="mt-6">
+          “Easy to use! Love this. I’m trying to get the company I work for to
+          go paperless. Easy to create work orders, always available on cloud.
+          Schedule helps so much to get reminders of maintenance tasks.”
+        </p>
+        <div class="blockquote-details">
+          <div class="info ps-0">
+            <h5 class="mb-1">Andrew Adler</h5>
+            <p class="mb-0">Cement Industry</p>
+          </div>
+        </div>
+      </blockquote>
+    </div>
+
+    <!-- Testimonial Slide 2 -->
+    <div class="swiper-slide">
+      <blockquote class="icon icon-top fs-lg text-center">
+        <p class="mt-6">
+          “Oxmaint APP has been amazing support to our team to collobrate
+          properly and in real time for construction equipments information. We
+          are able to manage our fleet and maintenance with ease.”
+        </p>
+        <div class="blockquote-details">
+          <div class="info ps-0">
+            <h5 class="mb-1">Samuel Akpan</h5>
+            <p class="mb-0">Fleet Manager</p>
+          </div>
+        </div>
+      </blockquote>
+    </div>
+
+    <!-- Testimonial Slide 1 -->
+    <div class="swiper-slide">
+      <blockquote class="icon icon-top fs-lg text-center">
+        <p class="mt-6">
+          “User-friendly interface of Oxmaint APP and customer support helps our
+          team onboarding, implementation, and training processes with positive
+          experience. As a construction equipment manager Oxmaint APP helps our
+          business in a many way.”
+        </p>
+        <div class="blockquote-details">
+          <div class="info ps-0">
+            <h5 class="mb-1">Cory Zamora</h5>
+            <p class="mb-0">Operations Manager</p>
+          </div>
+        </div>
+      </blockquote>
+    </div>
+
+    <!-- Testimonial Slide 2 -->
+    <div class="swiper-slide">
+      <blockquote class="icon icon-top fs-lg text-center">
+        <p class="mt-6">
+          “Best software to maintain construction machinery, no need to worry
+          about finding details from piles of paper just with some click all
+          information is available in your hand and also can easily share with
+          management. loved app!”
+        </p>
+        <div class="blockquote-details">
+          <div class="info ps-0">
+            <h5 class="mb-1">Coriss Ambady</h5>
+            <p class="mb-0">Manufacturing</p>
+          </div>
+        </div>
+      </blockquote>
+    </div>
+
+    <!-- Additional testimonial slides as needed -->
+  </div>
+
+  <!-- Add navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Optional Custom CSS for Testimonials -->
+<style>
+  /* Container styling with padding/margins and hidden overflow */
+  .swiper-container {
+    --bs-gutter-x: 1.5rem;
+    width: 100%;
+    max-width: 1290px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    padding-top: 20px;
+    background-color: #edf3fa;
+    border-radius: 10px;
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
+    overflow: hidden; /* Ensures elements outside frame are hidden */
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  /* Set a consistent height for each testimonial block */
+  .swiper-slide blockquote {
+    max-width: 350px; /* Control the width of each testimonial */
+    min-height: 300px; /* Set a minimum height for consistency */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content vertically */
+    align-items: center;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+
+  /* Adjust height for different screen sizes */
+  @media (max-width: 768px) {
+    .swiper-slide blockquote {
+      min-height: 250px; /* Adjust height on smaller screens */
+    }
+  }
+
+  .blockquote-details h5 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 1.1em;
+  }
+
+  .blockquote-details p {
+    color: gray;
+    font-size: 0.9em;
+  }
+
+  .icon-top p {
+    font-style: italic;
+    color: #333;
+    text-align: center;
+    margin: 0;
+  }
+
+  /* Swiper navigation button styling */
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: #15227a;
+    z-index: 10; /* Ensure navigation buttons are above other content */
+    margin-bottom: 3rem;
+  }
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    background-color: #fab757; /* Match accent color */
+    color: #fff;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .swiper-container {
+      max-width: 100%;
+    }
+
+    .swiper-slide blockquote {
+      max-width: 100%; /* Take full width on small screens */
+    }
+  }
+</style>

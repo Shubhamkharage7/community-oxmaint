@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hello everyone, I am currently working on simulating a multi-loop selection in Logix Designer. While I have set up the simulation, I am facing difficulties in configuring the cvprevious/setcvprevious functions. I am seeking advice from anyone who has experience with this. The override loop I am working with functions">
+    <meta name="keywords" content="logix designer, multi-loop selection, troubleshooting, simulation setup, cvprevious, setcvprevious, override loop, upset conditions, delay issue, non-selected loops, rockwell document, control voltage, loop configuration, programming functions, automation">
+    <meta name="author" content="oxmaint">
+    
+    <link rel="canonical" href="https://community.oxmaint.com/discussion-forum/troubleshooting-multi-loop-selection-in-logix-designer">
+    <title>Troubleshooting Multi-Loop Selection in Logix Designer | Oxmaint Community</title>
+    <link rel="shortcut icon" href="./../assets/img/favicon.png" />
+    <link rel="stylesheet" href="./../assets/css/plugins.css" />
+    <link rel="stylesheet" href="./../assets/css/style.css" />
+    <link rel="stylesheet" href="./../assets/css/colors/purple.css" />
+    
+    <!-- og or twitter tags -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Troubleshooting Multi-Loop Selection in Logix Designer | Oxmaint Community">
+    <meta property="og:description" content="Hello everyone, I am currently working on simulating a multi-loop selection in Logix Designer. While I have set up the simulation, I am facing difficulties in configuring the cvprevious/setcvprevious functions. I am seeking advice from anyone who has experience with this. The override loop I am working with functions">
+    <meta property="og:url" content="https://community.oxmaint.com/discussion-forum/troubleshooting-multi-loop-selection-in-logix-designer">
+    <meta property="og:site_name" content="Oxmaint">
+    <meta property="og:image" content="https://community.oxmaint.com/assets/img/favicon.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Troubleshooting Multi-Loop Selection in Logix Designer | Oxmaint Community">
+    <meta name="twitter:description" content="Hello everyone, I am currently working on simulating a multi-loop selection in Logix Designer. While I have set up the simulation, I am facing difficulties in configuring the cvprevious/setcvprevious functions. I am seeking advice from anyone who has experience with this. The override loop I am working with functions">
+    <meta name="twitter:image" content="https://community.oxmaint.com/assets/img/favicon.png">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y6M0T9NLP4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-Y6M0T9NLP4');
+    </script>
+
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://community.oxmaint.com/discussion-forum/troubleshooting-multi-loop-selection-in-logix-designer"
+      },
+      "headline": "Troubleshooting Multi-Loop Selection in Logix Designer",
+      "description": "Hello everyone, I am currently working on simulating a multi-loop selection in Logix Designer. While I have set up the simulation, I am facing difficulties in configuring the cvprevious/setcvprevious functions. I am seeking advice from anyone who has experience with this. The override loop I am working with functions",
+      "author": {
+        "@type": "Person",
+        "name": "ObnoxiousWatermelon"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Oxmaint",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://community.oxmaint.com/assets/img/favicon.png"
+        }
+      },
+      "datePublished": "2024-10-12",
+      "image": "https://community.oxmaint.com/assets/img/favicon.png"
+    }
+    </script>
+
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" defer></script>
+<link rel="stylesheet" href="./../assets/css/home.css"/>
+</head>
+<body>
+    <div class="content-wrapper bg-gray">
+        <?php include "../include/header.php" ?>
+        <!-- /header -->
+        <div class="container my-5">
+            
+
+            <div class="bg-primary card p-4 mb-4">
+                <h1 class="text-white">Troubleshooting Multi-Loop Selection in Logix Designer</h1>
+                <div class="d-flex justify-content-between">
+                    <ul class="post-meta text-white fs-15 mb-4">
+                        <li class="post-date"><i class="uil uil-calendar-alt"></i><span>12-10-2024</span></li>
+                        <li class="post-author"><i class="uil uil-user"></i><span>ObnoxiousWatermelon</span></li>
+                        <li class="post-comments"><i class="uil uil-comment-alt-dots"></i><span>2 comments</span></li>
+                        <li class="post-seen"><i class="uil uil-eye"></i><span id="counter">218</span></li>
+                        <li class="post-like"><i class="uil uil-thumbs-up" id="likeButton"></i><span id="likeCount">260</span></li>
+                    </ul>
+                </div>
+                <div class="card p-4">
+                    <h3>Question:</h3>
+                    <p>Hello everyone, I am currently working on simulating a multi-loop selection in Logix Designer. While I have set up the simulation, I am facing difficulties in configuring the "cvprevious/setcvprevious" functions. I am seeking advice from anyone who has experience with this. The 'override' loop I am working with functions normally, but experiences a delay when overriding under upset conditions. I believe that the cvprevious/setcvprevious functions could help in keeping the non-selected loops CV equal to the selected loops CV. For more information, you can refer to this document from Rockwell: [link].</p>
+                </div>
+            </div>
+
+            <div class="row custom-row">
+                <div class="col-lg-9 mx-auto mb-5">
+                    <div>
+                        <div class="p-4">
+                            <h3 class="text-primary">Top Replies</h3>
+                            
+        <div class="bg-white p-3 rounded mb-3">
+            <p>In reference to the previous PID Loop RSLogix 5000 thread, it appears that the simulation is malfunctioning. To resolve this issue, consider utilizing the 'assume data available' indicator for the CVPrevious inputs. You can access this option by right-clicking on it. For more assistance with this problem, please refer to the CLX PIDE Problem thread.</p>
+            <ul class="post-meta mb-0">
+                <li class="post-date"><i class="uil uil-calendar-alt"></i><span>13-10-2024</span></li>
+                <li class="post-author"><i class="uil uil-user"></i><span>jamesau</span></li>
+            </ul>
+        </div>
+        
+        <div class="bg-white p-3 rounded mb-3">
+            <p>In response to a user's comment in another thread about PID Loop in RSLogix 5000, it seems that the simulation is still not functioning correctly despite enabling the 'assume data available" indicator for both CVPrevious inputs. This could be indicative of a configuration error. I will continue troubleshooting to determine the cause of the issue.Visit the CLX PIDE Problem forum for more insights.</p>
+            <ul class="post-meta mb-0">
+                <li class="post-date"><i class="uil uil-calendar-alt"></i><span>14-10-2024</span></li>
+                <li class="post-author"><i class="uil uil-user"></i><span>ObnoxiousWatermelon</span></li>
+            </ul>
+        </div>
+        
+                        </div>
+                        <div class="p-4">
+    <h3 class="text-primary">
+        <a href="#" class="toggle-more-replies" style="text-decoration: underline; color: #1a73e8; cursor: pointer;">More Replies →</a>
+    </h3>
+    <div class="more-replies-content" style="display: none;">
+       
+    </div>
+    <div class="no-replies-message" style="display: none; color: gray;">
+        No More Replies.
+    </div>
+</div>
+                    <div class="no-replies-message" style="display: none; color: gray;">
+        No More Replies.
+    </div>
+        
+                        </div>
+                    </div>
+                <div class="col-lg-3 outer-container">
+                    <!-- Related Topics -->
+                    <?php include "./related-topic.php" ?>
+                </div>
+            </div>
+            <!-- </div> -->
+            <!-- cta button -->
+            <?php include "./cta.php" ?>
+
+            <!-- FAQ Section -->
+            <div class='my-5'><h3 class='faq-title text-primary mb-4'>Frequently Asked Questions (FAQ)</h3>
+<div class='faq-item bg-light p-4 rounded shadow-sm mb-3'>
+<h4 class='text-dark'>FAQ: 1. What is the purpose of using the "cvprevious/setcvprevious" functions in Logix Designer for multi-loop selection simulation?</h4>
+<p class='text-muted'><strong>Answer:</strong> - The "cvprevious/setcvprevious" functions in Logix Designer are used to help keep the non-selected loops' control variables (CV) equal to the selected loop's CV during simulation.</p>
+</div>
+<div class='faq-item bg-light p-4 rounded shadow-sm mb-3'>
+<h4 class='text-dark'>FAQ: 2. How can I troubleshoot delays in the "override" loop when overriding under upset conditions in Logix Designer?</h4>
+<p class='text-muted'><strong>Answer:</strong> - One approach to troubleshooting delays in the "override" loop when overriding under upset conditions is to explore the use of the cvprevious/setcvprevious functions to maintain consistency in control variables.</p>
+</div>
+<div class='faq-item bg-light p-4 rounded shadow-sm mb-3'>
+<h4 class='text-dark'>FAQ: 3. Are there any resources available from Rockwell that provide more information on multi-loop selection simulation in Logix Designer?</h4>
+<p class='text-muted'><strong>Answer:</strong> - Yes, for more detailed information on multi-loop selection simulation in Logix Designer, you can refer to the document from Rockwell shared in the discussion thread.</p>
+</div>
+</div>
+        </div>
+        <?php include "./footer-banner.php" ?>
+
+        <!-- /footer -->
+        <?php include "../include/footer.php" ?>
+
+        <script src="like-view-counter.js"></script>
+    </div>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    function initializeToggleFunctionality() {
+        const toggleLink = document.querySelector(".toggle-more-replies");
+        const moreRepliesContent = document.querySelector(".more-replies-content");
+        const noRepliesMessage = document.querySelector(".no-replies-message");
+
+        if (!toggleLink || !moreRepliesContent || !noRepliesMessage) {
+            console.error("Required elements not found. Ensure the correct class names are used.");
+            console.log({
+                toggleLink,
+                moreRepliesContent,
+                noRepliesMessage,
+            });
+            return;
+        }
+
+        const hasReplies = Array.from(moreRepliesContent.children).some(
+            (child) => child.nodeType === Node.ELEMENT_NODE
+        );
+
+        if (hasReplies) {
+            noRepliesMessage.style.display = "none";
+        } else {
+            noRepliesMessage.style.display = "block";
+            toggleLink.style.display = "none";
+            return;
+        }
+
+        toggleLink.addEventListener("click", (event) => {
+            event.preventDefault();
+            const isHidden = getComputedStyle(moreRepliesContent).display === "none";
+            moreRepliesContent.style.display = isHidden ? "block" : "none";
+            toggleLink.textContent = isHidden ? "Hide More Replies" : "More Replies →";
+        });
+    }
+
+    initializeToggleFunctionality();
+
+    const observer = new MutationObserver(() => {
+        const toggleLink = document.querySelector(".toggle-more-replies");
+        const moreRepliesContent = document.querySelector(".more-replies-content");
+
+        if (toggleLink && moreRepliesContent) {
+            initializeToggleFunctionality();
+            observer.disconnect();
+        }
+    });
+
+    observer.observe(document.body, { childList: true, subtree: true });
+});
+</script>
+</body>
+</html>
