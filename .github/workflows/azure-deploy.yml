@@ -34,7 +34,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: oxmaint-community.azurecr.io/${{ github.repository }}:${{ github.sha }}
+          tags: oxmaint-community.azurecr.io/${{ github.repository | lower }}:${{ github.sha }}
           file: ./Dockerfile
 
       - name: Deploy to Azure Web App
