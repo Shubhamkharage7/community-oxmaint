@@ -1,0 +1,45 @@
+name: Deploy to Azure Web App
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: 'Production'
+      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to Azure
+        uses: azure/login@v1
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+      - name: Build and push container image to registry
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          push: true
+          tags: oxmaint-community.azurecr.io/${{ github.repository }}:${{ github.sha }}
+          file: ./Dockerfile
+
+      - name: Deploy to Azure Web App
+        id: deploy-to-webapp
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: 'oxmaint-community'
+          slot-name: 'Production'
+          images: 'oxmaint-community.azurecr.io/${{ github.repository }}:${{ github.sha }}'

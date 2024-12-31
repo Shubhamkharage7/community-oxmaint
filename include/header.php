@@ -42,6 +42,7 @@
                         <li class="nav-item"><a href="https://oxmaint.com/pricing" class="nav-link">Pricing</a></li>
                     </ul>
                     <div class="d-lg-none mt-auto pt-6 pb-6 order-4">
+                        <!-- Contact email for support inquiries -->
                         <a href="mailto:contact@oxmaint.com">contact@oxmaint.com</a><br />
                         <a href="tel:+1 786 891 1010">+1 786 891 1010</a> <br />
                         <nav class="nav social social-white mt-4">
