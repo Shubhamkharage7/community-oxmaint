@@ -45,7 +45,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: oxmaintcommunity.azurecr.io/${{ format(github.repository) }}:${{ github.sha }}
+          tags: oxmaintcommunity.azurecr.io/shubhamkharage7/community-oxmaint:${{ github.sha }}
           file: ./Dockerfile
 
       - name: Deploy to Azure Web App
@@ -54,4 +54,4 @@ jobs:
         with:
           app-name: 'oxmaint-community'
           slot-name: 'Production'
-          images: 'oxmaintcommunity.azurecr.io/${{ format(github.repository) }}:${{ github.sha }}'
+          images: 'oxmaintcommunity.azurecr.io/shubhamkharage7/community-oxmaint:${{ github.sha }}'
