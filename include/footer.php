@@ -26,7 +26,7 @@
             <!-- /column -->
             <div class="col-md-4 col-lg-3">
                 <div class="widget">
-                    <h4 class="widget-title text-white mb-3">Our Services</h4>
+                    <h4 class="widget-title text-white mb-3 glow-text">Our Services</h4>
                     <ul class="list-unstyled mb-0">
                         <li><a href="https://oxmaint.com/work-order-management">Workorder Management</a></li>
                         <li><a href="https://oxmaint.com/request-maintenance">Preventive Maintenance</a></li>
@@ -41,7 +41,7 @@
             <!-- /column -->
             <div class="col-md-4 col-lg-3">
                 <div class="widget">
-                    <h4 class="widget-title text-white mb-3">Learn More</h4>
+                    <h4 class="widget-title text-white mb-3 glow-text">Learn More</h4>
                     <ul class="list-unstyled mb-0">
                         <li><a href="https://oxmaint.com/integration">Integrations</a></li>
                         <li><a href="https://oxmaint.com/support">Support</a></li>
@@ -55,15 +55,15 @@
             <!-- /column -->
             <div class="col-md-4 col-lg-3">
                 <div class="widget">
-                    <h4 class="widget-title text-white mb-3">Get in Touch</h4>
+                    <h4 class="widget-title text-white mb-3 glow-text">Get in Touch</h4>
                     <h5 class="mb-1" style="color:#fff ">Headquarters</h5>
                     <address class="pe-xl-15 pe-xxl-17">440 N. Wolfe Road, Sunnyvale, CA 94085, USA</address>
                     <br />
                     <nav class="nav social social-white">
-                        <a href="https://www.facebook.com/profile.php?id=100088709356711" target="_blank"><i class="uil uil-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/oxmaintapp/" target="_blank"><i class="uil uil-instagram"></i></a>
-                        <a href="https://www.linkedin.com/company/oxmaint/" target="_blank"><i class="uil uil-linkedin"></i></a>
-                        <a href="https://www.youtube.com/channel/UCcZOKgJbv0Qoey6R6LM8_Nw" target="_blank"><i class="uil uil-youtube"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100088709356711" target="_blank"><i class="uil uil-facebook-f icon-animate"></i></a>
+                        <a href="https://www.instagram.com/oxmaintapp/" target="_blank"><i class="uil uil-instagram icon-animate"></i></a>
+                        <a href="https://www.linkedin.com/company/oxmaint/" target="_blank"><i class="uil uil-linkedin icon-animate"></i></a>
+                        <a href="https://www.youtube.com/channel/UCcZOKgJbv0Qoey6R6LM8_Nw" target="_blank"><i class="uil uil-youtube icon-animate"></i></a>
                     </nav>
                     <!-- /.social -->
                 </div>
