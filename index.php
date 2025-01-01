@@ -13,7 +13,10 @@
     <link rel="stylesheet" href="./assets/css/plugins.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/colors/purple.css">
+    <link rel="stylesheet" href="./assets/css/cyber-theme.css">
+    <link rel="stylesheet" href="./assets/css/new-futuristic.css">
     <link rel="stylesheet" href="./assets/css/futuristic.css">
+    <link rel="stylesheet" href="./assets/css/new-animations.css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y6M0T9NLP4"></script>
@@ -126,16 +129,16 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 mx-auto text-center text-lg-start">
                         <h1 class="display-1 mb-5 glow-text">Simplifying Maintenance, Maximizing Uptime.</h1>
-                        <p class="lead fs-25 lh-sm mb-7 px-md-10 px-lg-0 motion-fx">Tailored solutions for every stage of your equipment's lifecycle, powered by next-gen technology.</p>
+                        <p class="lead fs-25 lh-sm mb-7 px-md-10 px-lg-0 motion-fx gradient-text">Tailored solutions for every stage of your equipment's lifecycle, powered by next-gen technology.</p>
                         <div class="d-md-flex justify-content-center justify-content-lg-start">
-                            <div class="gradient-border me-2 mb-2">
-                                <a href="./discussion-forum/" class="btn btn-lg futuristic-btn">
+                            <div class="gradient-border me-2 mb-2 fade-in-up">
+                                <a href="./discussion-forum/" class="btn btn-lg futuristic-btn hover-glow">
                                     <img src="./assets/img/icons/lineal/group.svg" class="svg-inject icon-svg icon-svg-xs me-2 icon-animate" alt="" />
                                     Community
                                 </a>
                             </div>
-                            <div class="gradient-border mb-2">
-                                <a href="./blog/" class="btn btn-lg futuristic-btn-outline">
+                            <div class="gradient-border mb-2 fade-in-up">
+                                <a href="./blog/" class="btn btn-lg futuristic-btn-outline hover-glow">
                                     <img src="./assets/img/icons/lineal/browser.svg" class="svg-inject icon-svg icon-svg-xs me-2 icon-animate" alt="" />
                                     Maintenance News
                                 </a>
@@ -325,6 +328,7 @@
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/theme.js"></script>
+    <script src="./assets/js/animations.js"></script>
 
 </body>
 

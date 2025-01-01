@@ -1,0 +1,154 @@
+/* Cyber Theme Styles */
+:root {
+    --cyber-primary: #061748;
+    --cyber-secondary: #1a237e;
+    --cyber-accent: #fab758;
+    --cyber-text: #ffffff;
+    --cyber-glow: rgba(250, 183, 88, 0.3);
+}
+
+/* Cyber Nav */
+.cyber-nav {
+    background: rgba(6, 23, 72, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(250, 183, 88, 0.1);
+}
+
+.cyber-brand {
+    position: relative;
+}
+
+.cyber-logo {
+    transition: all 0.3s ease;
+}
+
+.cyber-logo:hover {
+    filter: drop-shadow(0 0 10px var(--cyber-glow));
+    transform: scale(1.05);
+}
+
+/* Cyber Banner */
+.cyber-banner {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(45deg, var(--cyber-primary), var(--cyber-secondary));
+}
+
+.cyber-grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(var(--cyber-accent) 1px, transparent 1px),
+                      linear-gradient(90deg, var(--cyber-accent) 1px, transparent 1px);
+    background-size: 30px 30px;
+    background-position: center;
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.cyber-text {
+    position: relative;
+    z-index: 2;
+}
+
+.cyber-highlight {
+    background: linear-gradient(120deg, var(--cyber-accent), #fff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: cyber-pulse 2s infinite;
+}
+
+.cyber-icon {
+    display: inline-block;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Enhance existing futuristic classes */
+.glow-text {
+    text-shadow: 0 0 10px var(--cyber-glow);
+    transition: all 0.3s ease;
+}
+
+.glow-text:hover {
+    color: var(--cyber-accent) !important;
+    text-shadow: 0 0 15px var(--cyber-glow);
+}
+
+.icon-animate {
+    transition: all 0.3s ease;
+}
+
+.icon-animate:hover {
+    color: var(--cyber-accent);
+    transform: scale(1.2);
+}
+
+.futuristic-btn {
+    background: linear-gradient(45deg, var(--cyber-primary), var(--cyber-secondary));
+    border: 1px solid var(--cyber-accent);
+    color: var(--cyber-text) !important;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.futuristic-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px var(--cyber-glow);
+    background: linear-gradient(45deg, var(--cyber-accent), var(--cyber-secondary));
+}
+
+.futuristic-btn::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+    transform: rotate(45deg);
+    animation: shine 3s infinite;
+}
+
+/* Footer Styles */
+.cyber-footer {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(180deg, var(--cyber-primary), var(--cyber-secondary));
+}
+
+.cyber-footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--cyber-accent), transparent);
+}
+
+/* Animations */
+@keyframes cyber-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes shine {
+    0% { transform: rotate(45deg) translateX(-100%); }
+    100% { transform: rotate(45deg) translateX(100%); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cyber-grid {
+        background-size: 20px 20px;
+    }
+}
