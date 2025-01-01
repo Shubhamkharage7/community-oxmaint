@@ -37,7 +37,7 @@ jobs:
         uses: azure/docker-login@v1
         with:
           login-server: oxmaintcommunity.azurecr.io
-          username: ${{ secrets.REGISTRY_USERNAME }}
+          username: oxmaintcommunity
           password: ${{ secrets.REGISTRY_PASSWORD }}
 
       - name: Build and push container image to registry
