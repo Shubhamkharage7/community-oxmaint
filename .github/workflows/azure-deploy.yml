@@ -37,7 +37,7 @@ jobs:
         uses: azure/docker-login@v1
         with:
           login-server: oxmaintcommunity.azurecr.io
-          username: ${{ secrets.REGISTRY_USERNAME }}
+          username: oxmaintcommunity
           password: ${{ secrets.REGISTRY_PASSWORD }}
 
       - name: Build and push container image to registry
@@ -45,7 +45,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: oxmaintcommunity.azurecr.io/${{ github.repository | lower }}:${{ github.sha }}
+          tags: oxmaintcommunity.azurecr.io/shubhamkharage7/community-oxmaint:${{ github.sha }}
           file: ./Dockerfile
 
       - name: Deploy to Azure Web App
@@ -54,4 +54,4 @@ jobs:
         with:
           app-name: 'oxmaint-community'
           slot-name: 'Production'
-          images: 'oxmaintcommunity.azurecr.io/${{ github.repository | lower }}:${{ github.sha }}'
+          images: 'oxmaintcommunity.azurecr.io/shubhamkharage7/community-oxmaint:${{ github.sha }}'
