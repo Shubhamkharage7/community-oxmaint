@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="./assets/css/plugins.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/colors/purple.css">
-    <link rel="stylesheet" href="./assets/css/futuristic.css">
+    <link rel="stylesheet" href="./assets/css/new-futuristic.css">
+    <link rel="stylesheet" href="./assets/css/new-animations.css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y6M0T9NLP4"></script>
@@ -325,6 +326,7 @@
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/theme.js"></script>
+    <script src="./assets/js/animations.js"></script>
 
 </body>
 
