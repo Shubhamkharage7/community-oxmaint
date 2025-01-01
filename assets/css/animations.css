@@ -1,0 +1,49 @@
+/* Animations for futuristic UI elements */
+@keyframes glow {
+    0% { text-shadow: 0 0 5px rgba(255,255,255,0.8); }
+    50% { text-shadow: 0 0 20px rgba(255,255,255,0.8), 0 0 30px rgba(0,198,255,0.6); }
+    100% { text-shadow: 0 0 5px rgba(255,255,255,0.8); }
+}
+
+@keyframes buttonGlow {
+    0% { box-shadow: 0 0 5px rgba(0,198,255,0.5); }
+    50% { box-shadow: 0 0 20px rgba(0,198,255,0.8); }
+    100% { box-shadow: 0 0 5px rgba(0,198,255,0.5); }
+}
+
+@keyframes iconFloat {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+}
+
+.glow-text {
+    animation: glow 2s infinite;
+    transition: color 0.3s ease;
+}
+
+.glow-text:hover {
+    color: #00c6ff !important;
+}
+
+.futuristic-btn {
+    background: linear-gradient(45deg, #00c6ff, #0072ff) !important;
+    border: none !important;
+    color: white !important;
+    transition: all 0.3s ease;
+    animation: buttonGlow 3s infinite;
+}
+
+.futuristic-btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #0072ff, #00c6ff) !important;
+}
+
+.icon-animate {
+    animation: iconFloat 2s infinite ease-in-out;
+    transition: color 0.3s ease;
+}
+
+.icon-animate:hover {
+    color: #00c6ff !important;
+}

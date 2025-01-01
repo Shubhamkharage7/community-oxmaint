@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./assets/css/plugins.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/colors/purple.css">
+    <link rel="stylesheet" href="./assets/css/futuristic.css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y6M0T9NLP4"></script>
@@ -124,16 +125,28 @@
             <div class="container py-8">
                 <div class="row align-items-center">
                     <div class="col-lg-6 mx-auto text-center text-lg-start">
-                        <h1 class="display-1 mb-5">Simplifying Maintenance, Maximizing Uptime.</h1>
-                        <p class="lead fs-25 lh-sm mb-7 px-md-10 px-lg-0">Tailored solutions for every stage of your equipment's lifecycle.</p>
+                        <h1 class="display-1 mb-5 glow-text">Simplifying Maintenance, Maximizing Uptime.</h1>
+                        <p class="lead fs-25 lh-sm mb-7 px-md-10 px-lg-0 motion-fx">Tailored solutions for every stage of your equipment's lifecycle, powered by next-gen technology.</p>
                         <div class="d-md-flex justify-content-center justify-content-lg-start">
-                            <span><a href="./discussion-forum/" class="btn btn-lg btn-primary rounded me-2 mb-2">Community</a></span>
-                            <span><a href="./blog/" class="btn btn-lg btn-outline-primary rounded mb-2">Maintenance News</a></span>
+                            <div class="gradient-border me-2 mb-2">
+                                <a href="./discussion-forum/" class="btn btn-lg futuristic-btn">
+                                    <img src="./assets/img/icons/lineal/group.svg" class="svg-inject icon-svg icon-svg-xs me-2 icon-animate" alt="" />
+                                    Community
+                                </a>
+                            </div>
+                            <div class="gradient-border mb-2">
+                                <a href="./blog/" class="btn btn-lg futuristic-btn-outline">
+                                    <img src="./assets/img/icons/lineal/browser.svg" class="svg-inject icon-svg icon-svg-xs me-2 icon-animate" alt="" />
+                                    Maintenance News
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <!--/column -->
                     <div class="col-lg-5 mx-auto position-relative">
-                        <figure class="rounded"><img src="../assets/img/community.jpg" srcset="./assets/img/community.jpg" alt="community"></figure>
+                        <figure class="rounded futuristic-figure">
+                            <img src="./assets/img/icons/lineal/rocket.svg" class="svg-inject icon-svg icon-svg-lg text-blue mb-3 icon-animate" alt="rocket" />
+                        </figure>
                     </div>
                     <!--/column -->
                 </div>
