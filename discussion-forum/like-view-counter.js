@@ -28,12 +28,14 @@ document.addEventListener('DOMContentLoaded', () => {
     counterElement.textContent = formatNumber(count);
 
     // Reset counter on button click
-    resetButton.addEventListener('click', () => {
-        count = DEFAULT_COUNT;
-        localStorage.setItem(COUNT_KEY, count);
-        localStorage.removeItem(TIMESTAMP_KEY);
-        counterElement.textContent = formatNumber(count);
-    });
+    if (resetButton) {
+        resetButton.addEventListener('click', () => {
+            count = DEFAULT_COUNT;
+            localStorage.setItem(COUNT_KEY, count);
+            localStorage.removeItem(TIMESTAMP_KEY);
+            counterElement.textContent = formatNumber(count);
+        });
+    }
 
     function formatNumber(num) {
         if (num >= 1000000) {
@@ -107,12 +109,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-document.getElementById("author-question-header").addEventListener("click", function () {
-    var moreReplies = document.getElementById("author-question");
-    if (moreReplies.style.display === "none") {
-        moreReplies.style.display = "block";
-    } else {
-        moreReplies.style.display = "none";
-    }
-    updateReplyCounts();
-});
+const authorQuestionHeader = document.getElementById("author-question-header");
+if (authorQuestionHeader) {
+    authorQuestionHeader.addEventListener("click", function () {
+        const moreReplies = document.getElementById("author-question");
+        if (moreReplies && moreReplies.style.display === "none") {
+            moreReplies.style.display = "block";
+        } else if (moreReplies) {
+            moreReplies.style.display = "none";
+        }
+        if (typeof updateReplyCounts === 'function') {
+            updateReplyCounts();
+        }
+    });
+}
