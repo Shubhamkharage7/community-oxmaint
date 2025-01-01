@@ -34,12 +34,12 @@
                 </div>
                 <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a href="./../discussion-forum/" class="nav-link glow-text">Community</a></li>
-                        <li class="nav-item"><a href="./../blog/" class="nav-link glow-text">Blogs</a></li>
-                        <li class="nav-item"><a href="./../faq/" class="nav-link glow-text">Resources</a></li>
-                        <li class="nav-item"><a href="./../" class="nav-link glow-text">Help Center</a></li>
-                        <li class="nav-item"><a href="./../events/" class="nav-link glow-text">Events</a></li>
-                        <li class="nav-item"><a href="https://oxmaint.com/pricing" class="nav-link glow-text">Pricing</a></li>
+                        <li class="nav-item"><a href="./../discussion-forum/" class="nav-link glow-text cyber-nav-link">Community</a></li>
+                        <li class="nav-item"><a href="./../blog/" class="nav-link glow-text cyber-nav-link">Blogs</a></li>
+                        <li class="nav-item"><a href="./../faq/" class="nav-link glow-text cyber-nav-link">Resources</a></li>
+                        <li class="nav-item"><a href="./../" class="nav-link glow-text cyber-nav-link">Help Center</a></li>
+                        <li class="nav-item"><a href="./../events/" class="nav-link glow-text cyber-nav-link">Events</a></li>
+                        <li class="nav-item"><a href="https://oxmaint.com/pricing" class="nav-link glow-text cyber-nav-link">Pricing</a></li>
                     </ul>
                     <div class="d-lg-none mt-auto pt-6 pb-6 order-4">
                         <!-- Contact email for support inquiries -->
@@ -69,10 +69,13 @@
             </div>
         </div>
     </nav>
-    <div class="gradient-5 text-white fw-bold fs-md position-relative" style="z-index: 1;">
+    <div class="cyber-banner gradient-5 text-white fw-bold fs-md position-relative" style="z-index: 1;">
         <div class="container py-2 text-center">
-            <p class="mb-0 fs-20 banner-color"> Ready to Optimize Your Maintenance? 🚀 <a href="https://oxmaint.com/portal/signup" class="btn btn-primary badge badge-lg text-uppercase rounded me-2 demo-button" target='_blank'>
-                    Try It Free </a>
+            <p class="mb-0 fs-20 banner-color cyber-text">
+                <span class="cyber-highlight">Ready to Optimize Your Maintenance?</span>
+                <span class="cyber-icon">🚀</span>
+                <a href="https://oxmaint.com/portal/signup" class="btn btn-primary badge badge-lg text-uppercase rounded me-2 futuristic-btn" target='_blank'>
+                    Try It Free <i class="uil uil-arrow-right"></i></a>
             </p>
         </div>
     </div>

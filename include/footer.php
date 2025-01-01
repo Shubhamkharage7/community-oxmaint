@@ -1,4 +1,4 @@
-<footer class="text-inverse" style="background-color: #061748;">
+<footer class="text-inverse cyber-footer">
     <div class="container py-5 py-md-5">
         <div class="d-lg-flex flex-row align-items-lg-center">
             <h3 class="display-6 mb-6 mb-lg-0 pe-lg-10 pe-xl-12 text-white checkhere">Most Affordable Maintenance Management Software For Teams.</h3>

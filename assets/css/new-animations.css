@@ -1,0 +1,136 @@
+/* Animation Styles */
+
+/* Hover animations for interactive elements */
+.hover-glow {
+    transition: all 0.3s ease;
+}
+
+.hover-glow:hover {
+    filter: drop-shadow(0 0 10px rgba(0, 198, 255, 0.5));
+}
+
+/* Scroll-triggered animations */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Loading animations */
+.cyber-loading {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.cyber-loading::before,
+.cyber-loading::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-top-color: #00c6ff;
+    border-right-color: #00c6ff;
+    border-radius: 50%;
+    animation: cyber-spin 1.5s linear infinite;
+}
+
+.cyber-loading::after {
+    border-top-color: #0072ff;
+    border-right-color: #0072ff;
+    animation-duration: 1s;
+}
+
+@keyframes cyber-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Text glitch effect */
+.glitch-text {
+    position: relative;
+    animation: glitch 3s infinite;
+}
+
+.glitch-text::before,
+.glitch-text::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip: rect(0, 0, 0, 0);
+}
+
+.glitch-text::before {
+    left: 2px;
+    text-shadow: -1px 0 #00c6ff;
+    animation: glitch-1 2s infinite linear alternate-reverse;
+}
+
+.glitch-text::after {
+    left: -2px;
+    text-shadow: 2px 0 #0072ff;
+    animation: glitch-2 3s infinite linear alternate-reverse;
+}
+
+@keyframes glitch {
+    2%, 64% { transform: translate(2px,0) skew(0deg); }
+    4%, 60% { transform: translate(-2px,0) skew(0deg); }
+    62% { transform: translate(0,0) skew(5deg); }
+}
+
+@keyframes glitch-1 {
+    0% { clip: rect(20px, 9999px, 21px, 0); }
+    100% { clip: rect(25px, 9999px, 26px, 0); }
+}
+
+@keyframes glitch-2 {
+    0% { clip: rect(25px, 9999px, 26px, 0); }
+    100% { clip: rect(28px, 9999px, 29px, 0); }
+}
+
+/* Icon animations */
+.icon-animate {
+    animation: floatIcon 3s infinite ease-in-out;
+}
+
+@keyframes floatIcon {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Gradient text animation */
+.gradient-text {
+    background: linear-gradient(90deg, #00c6ff, #0072ff, #00c6ff);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 3s linear infinite;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% center; }
+    100% { background-position: 200% center; }
+}
+
+/* Motion effects */
+.motion-fx {
+    animation: breathe 4s infinite ease-in-out;
+}
+
+@keyframes breathe {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
